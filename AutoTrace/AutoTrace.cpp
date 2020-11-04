@@ -66,9 +66,6 @@ int main()
 		cv::namedWindow("frame", WINDOW_NORMAL);
 		// 复制一个原始帧，给框定目标回调函数用
 		current_frame = frame.clone();
-
-		cv::setMouseCallback("frame", MouseEvent);
-
 		cv::setMouseCallback("frame", MouseEvent);
 		frames.push_back(frame.clone());
 		cv::imshow("frame", frame);
@@ -120,23 +117,22 @@ int main()
 				)
 			);
 			cout << "Fresh_x1_y1:" << new_x << "_" << new_y << ",new_x2_y2:" << cvRound(particles[j].width*s) << "_" << cvRound(particles[j].height*s) << endl;
-			system("pause");
 			Rect imgParticleRect = Rect(new_x, new_y, cvRound(particles[j].width*s), cvRound(particles[j].height*s));
 			Mat imgParticle = current_frame(imgParticleRect).clone();
 			// 上述区域转换到hsv空间
 			cv::cvtColor(imgParticle, imgParticle, COLOR_BGR2GRAY);// COLOR_BGR2GRAY->CV_BGR2HSV
 			// 计算区域的直方图
+			// 异常点
+			cout << "channels:" << channels << " particles[j].hist:" << particles[j].hist << " phistSize:" << histSize << " ranges:" << ranges << endl;
+			system("pause");
 			cv::calcHist(&imgParticle, 1, channels, Mat(), particles[j].hist, 2, histSize, ranges);
 			// 直方图归一化到（0，1）
 			cv::normalize(particles[j].hist, particles[j].hist, 0, 1, NORM_MINMAX, -1, Mat());	// 归一化L2
 			// 画出蓝色的粒子框
 			cv::rectangle(frame, imgParticleRect, Scalar(255, 0, 0), 1, 8);
-			cv::imshow("particle", imgParticle);
+			//cv::imshow("particle", imgParticle);
 			// 比较目标的直方图和上述计算的区域直方图,更新particle权重
-			particles[j].weight = exp(-100 * (
-				compareHist(hist, particles[j].hist, CV_COMP_BHATTACHARYYA)// CV_COMP_CORREL  CV_COMP_BHATTACHARYYA
-				)
-			);
+			particles[j].weight = exp(-100 * (compareHist(hist, particles[j].hist, CV_COMP_BHATTACHARYYA)));
 			int jj = 0;
 		}
 		// 粒子归一化权重 
