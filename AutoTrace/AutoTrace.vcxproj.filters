@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoTrace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoTrace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_blas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_blas_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_block_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_bspline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_cblas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_cdf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_chebyshev.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_check_range.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_combination.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_complex_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const_cgs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const_cgsm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const_mks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const_mksa.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_const_num.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_deriv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_dft_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_dft_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_dht.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_diff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_eigen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_errno.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_halfcomplex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_halfcomplex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_real.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fft_real_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_filter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_fit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_heapsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_histogram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_histogram2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_ieee_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_inline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_integration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_interp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_interp2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_linalg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_machine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_matrix_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_min.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_minmax.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_mode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_monte.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_monte_miser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_monte_plain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_monte_vegas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_movstat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multifit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multifit_nlin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multifit_nlinear.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multilarge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multilarge_nlinear.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multimin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multiroots.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_multiset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_nan.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_ntuple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_odeiv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_odeiv2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permutation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_matrix_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_permute_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_poly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_pow_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_precision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_qrng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_randist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_rng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_roots.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_rstat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_airy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_bessel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_clausen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_coulomb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_coupling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_dawson.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_debye.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_dilog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_elementary.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_ellint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_elljac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_erf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_exp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_expint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_fermi_dirac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_gamma.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_gegenbauer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_hermite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_hyperg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_laguerre.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_lambert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_legendre.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_mathieu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_pow_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_psi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_result.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_sincos_pi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_synchrotron.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_transport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_trig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sf_zeta.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_siman.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sort_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_spblas.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_specfunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_splinalg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_spline.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_spline2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_spmatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_statistics_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_sys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_char.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_complex_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_complex_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_complex_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_float.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_int.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_long.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_long_double.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_short.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_uchar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_uint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_ulong.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_vector_ushort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_wavelet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\gsl-2.5\build\include\gsl\gsl_wavelet2d.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

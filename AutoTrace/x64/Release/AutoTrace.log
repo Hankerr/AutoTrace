@@ -1,0 +1,8 @@
+﻿  AutoTrace.cpp
+d:\study\repos\autotrace\autotrace\autotrace.cpp(33): warning C4244: “参数”: 从“time_t”转换到“unsigned long”，可能丢失数据
+d:\study\repos\autotrace\autotrace\autotrace.cpp(152): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\study\repos\autotrace\autotrace\autotrace.cpp(275): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码
+  All 388 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  AutoTrace.vcxproj -> D:\Study\Repos\AutoTrace\x64\Release\AutoTrace.exe

@@ -1,0 +1,2 @@
+﻿  AutoTrace.cpp
+opencv_world430.lib(opencv_world430.dll) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“x86”冲突
