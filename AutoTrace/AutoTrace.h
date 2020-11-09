@@ -20,30 +20,30 @@
 #include <imgproc/types_c.h>
 
 
-#define NUM_PARTICLE 50 // Á£×ÓÊı
+#define NUM_PARTICLE 50 // ç²’å­æ•°
 
 using namespace std;
 using namespace cv;
 
-/*********************½á¹¹Ìå************************/
-// Á£×Ó½á¹¹Ìå
+// ç´ æä¿®æ”¹ï¼Œæ›¿æ¢material.avi
+string video_file_name = "material.avi";
+
+// ç²’å­ç»“æ„ä½“
 typedef struct particle {
-	double x;				// µ±Ç°x×ø±ê
-	double y;				// µ±Ç°y×ø±ê
-	double scale;			// ´°¿Ú±ÈÀıÏµÊı
-	double xPre;			// x×ø±êÔ¤²âÎ»ÖÃ
-	double yPre;			// y×ø±êÔ¤²âÎ»ÖÃ
-	double scalePre;		// ´°¿ÚÔ¤²â±ÈÀıÏµÊı
-	double xOri;			// Ô­Ê¼x×ø±ê
-	double yOri;			// Ô­Ê¼y×ø±ê
-	int width;				// Ô­Ê¼ÇøÓò¿í¶È
-	int height;				// Ô­Ê¼ÇøÓò¸ß¶È
-	MatND hist;				// Á£×ÓÇøÓòµÄÌØÕ÷Ö±·½Í¼
-	double weight;			// ¸ÃÁ£×ÓµÄÈ¨ÖØ
+	double x;				// å½“å‰xåæ ‡
+	double y;				// å½“å‰yåæ ‡
+	double scale;			// çª—å£æ¯”ä¾‹ç³»æ•°
+	double xPre;			// xåæ ‡é¢„æµ‹ä½ç½®
+	double yPre;			// yåæ ‡é¢„æµ‹ä½ç½®
+	double scalePre;		// çª—å£é¢„æµ‹æ¯”ä¾‹ç³»æ•°
+	double xOri;			// åŸå§‹xåæ ‡
+	double yOri;			// åŸå§‹yåæ ‡
+	int width;				// åŸå§‹åŒºåŸŸå®½åº¦
+	int height;				// åŸå§‹åŒºåŸŸé«˜åº¦
+	MatND hist;				// ç²’å­åŒºåŸŸçš„ç‰¹å¾ç›´æ–¹å›¾
+	double weight;			// è¯¥ç²’å­çš„æƒé‡
 } PARTICLE;
 
-/************************Á£×Ó×´Ì¬×ªÒÆ£¨ĞÂÎ»ÖÃÉú³ÉÔ¤²â£©***********************/
-/* standard deviations for gaussian sampling in transition model */
 #define TRANS_X_STD 1.0
 #define TRANS_Y_STD 0.5
 #define TRANS_S_STD 0.001
@@ -52,57 +52,34 @@ typedef struct particle {
 #define A2  -1.0//-1.0
 #define B0  1.0000
 
-/************************Êó±ê»Øµ÷²¿·Ö*************************/
-Rect roiRect;//Ñ¡È¡¾ØĞÎÇø
-Point startPoint;//Æğµã
-Point endPoint;//ÖÕµã
+Rect roiRect;//é€‰å–çŸ©å½¢åŒº
+Point startPoint;//èµ·ç‚¹
+Point endPoint;//ç»ˆç‚¹
 Mat hsv_roiImage;
 Mat current_frame;
 Mat roiImage;
-bool downFlag = false;// °´ÏÂ±êÖ¾Î»
-bool upFlag = false;// µ¯Æğ±êÖ¾Î»
+bool downFlag = false;// æŒ‰ä¸‹æ ‡å¿—ä½
+bool upFlag = false;// å¼¹èµ·æ ‡å¿—ä½
 bool getTargetFlag = false;
 void MouseEvent(int, int, int, int, void*);
 
-// ÌáÈ¡¸ĞĞËÈ¤MatÔª
+// æå–æ„Ÿå…´è¶£Matå…ƒ
 Mat regionExtraction(int, int, int, int);
 
-/***********************Ö±·½Í¼²ÎÊı********************************/
-// Ö±·½Í¼
-int hbins = 10, sbins = 10, vbin = 20;  //180 256 10
-int histSize[] = { hbins, sbins };//vbin
-//hµÄ·¶Î§
+// ç›´æ–¹å›¾å‚æ•°
+// ç›´æ–¹å›¾
+int hbins = 10, sbins = 10, vbin = 20;
+int histSize[] = { hbins, sbins };
+//hçš„èŒƒå›´
 float hranges[] = { 0, 180 };
-//sµÄ·¶Î§
+//sçš„èŒƒå›´
 float sranges[] = { 0, 256 };
 float vranges[] = { 0, 256 };
 
-// ±È½ÏhsvÄ£ĞÍµÄÉ«µ÷ºÍ±¥ºÍ¶ÈÁ½¸öÍ¨µÀ
+// æ¯”è¾ƒhsvæ¨¡å‹çš„è‰²è°ƒå’Œé¥±å’Œåº¦ä¸¤ä¸ªé€šé“
 const float* ranges[] = { hranges, sranges };
 
-// ±È½ÏÖ±·½Í¼µÄ0-th ºÍ 1-st Í¨µÀ
+// æ¯”è¾ƒç›´æ–¹å›¾çš„0-th å’Œ 1-st é€šé“
 int channels[] = { 0, 1 };
 
-class AutoTrace
-{
-public:
-	// Á£×Ó³õÊ¼»¯
-	void particle_init(particle*, int, MatND);
-	// Á£×Ó×´Ì¬×ªÒÆ£¨ĞÂÎ»ÖÃÉú³ÉÔ¤²â£©
-	particle transition(particle p, int w, int h, gsl_rng* rng);
-	// Á£×ÓÈ¨ÖØ¹éÒ»»¯
-	void normalize_weights(particle*, int);
-	// Á£×ÓÖØ²ÉÑù
-	void resample(particle*, particle*, int);
-	// ¶ş·Ö·¨ÇóÊı×éÖĞ´óÓÚ¸ø¶¨ÖµµÄ×îĞ¡ÖµË÷Òı
-	static int get_min_index(double*, int, double);
-	// Á£×ÓÈ¨ÖØÅÅĞò
-	static int particle_cmp(const void*, const void*);
-public:
-	// ´´½¨Á£×ÓÊı×é
-	int num_particles = NUM_PARTICLE; // Á£×ÓÊı
-	PARTICLE particles[NUM_PARTICLE];
-	PARTICLE new_particles[NUM_PARTICLE];
-	// ÊÓÆµËØ²Ä
-	string video_name;
-};
+bool readFrameFlag = false;
